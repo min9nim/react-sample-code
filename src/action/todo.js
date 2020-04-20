@@ -9,7 +9,9 @@ function addTodo(text) {
 }
 
 function addTodo2(text) {
+	console.log('addTodo2')
   return (dispatch) => {
+		console.log('addTodo2 dispatch', dispatch)
 	return fetch("api/add.json").then(
 		res => res.json().then(data => dispatch(addTodo(data.status)))
 	);

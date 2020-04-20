@@ -27,6 +27,7 @@ const headerDispatchToProps = (dispatch) => {
     return {
         onClick(txt){
           dispatch(addTodo2(txt))
+          // addTodo2(txt)
         }
     }
 }
